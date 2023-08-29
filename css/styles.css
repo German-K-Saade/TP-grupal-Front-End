@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    color: #0a138d;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300px;
+
+}
+
+header a{
+    vertical-align: middle;
+}
+
+a{
+    text-decoration: none; /* quitar subrayado*/
+}
+
+header {
+    width: auto;
+    margin: auto;
+    height: 70px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header a img {
+    height: 60px;
+    width: 60px;
+    vertical-align: middle;
+    
+}
+
+header nav a{
+    margin: 15px;
+}
+
+#banner-nacional{
+    width: auto;
+    height: 400px;
+    background-image:url(../img/chalten6.jpg);
+    background-size:cover;
+    background-position:center center;
+    display: flex;
+    align-items: center;
+}
+
+#banner-internacional{
+    width: auto;
+    height: 400px;
+    background-image:url(../img/roma1.jpg);
+    background-size:cover;
+    background-position:center center;
+    display: flex;
+    align-items: center;
+}
+
+main{
+    width: auto;
+    margin: auto;
+}
+
+#banner-nacional a{
+    color: white;
+    font-size: 32px;
+    margin: auto;
+}
+
+#banner-internacional a{
+    color: white;
+    font-size: 32px;
+    margin: auto;
+}
+
+footer{
+    background-color: #494847;
+    height: 200px;
+    margin: auto;
+}
+
+
+footer div a img{
+    width: 60px;
+    margin: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
