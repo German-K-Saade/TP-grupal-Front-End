@@ -46,7 +46,7 @@ header nav a{
 
 #banner-nacional{
     height: 400px;
-    background-image:url(/img/chalten2.jpg);
+    background-image:url(img/chalten1.jpg);
     background-size: auto;
     background-position:center center;
     display: flex;
@@ -55,7 +55,7 @@ header nav a{
 
 #banner-internacional{
     height: 400px;
-    background-image:url(../img/roma1.jpg);
+    background-image:url(img/roma1.jpg);
     background-size:auto;
     background-position:center center;
     display: flex;
