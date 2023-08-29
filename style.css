@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap');
 
 *{
-    margin: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
     padding: 0px;
     box-sizing: border-box;
 }
@@ -44,20 +45,18 @@ header nav a{
 }
 
 #banner-nacional{
-    width: auto;
     height: 400px;
-    background-image:url(/img/chalten1.jpg);
-    background-size:cover;
+    background-image:url(/img/chalten2.jpg);
+    background-size: auto;
     background-position:center center;
     display: flex;
     align-items: center;
 }
 
 #banner-internacional{
-    width: auto;
     height: 400px;
     background-image:url(../img/roma1.jpg);
-    background-size:cover;
+    background-size:auto;
     background-position:center center;
     display: flex;
     align-items: center;
@@ -83,11 +82,10 @@ main{
 footer{
     background-color: #494847;
     height: 200px;
-    margin: auto;
 }
 
 
-footer div a img{
+footer img{
     width: 60px;
     margin: 12px;
 }
