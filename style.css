@@ -46,7 +46,7 @@ header nav a{
 #banner-nacional{
     width: auto;
     height: 400px;
-    background-image:url(../img/chalten6.jpg);
+    background-image:url(/img/chalten1.jpg);
     background-size:cover;
     background-position:center center;
     display: flex;
