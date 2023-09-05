@@ -2,14 +2,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
-
+/* Globales*/
 *{
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     text-decoration: none;
 }
+/* Pagina Index*/
 
 body{
     font-family: "Raleway", sans-serif;
@@ -74,7 +74,19 @@ header nav a{
 main{
     width: auto;
     margin: auto;
-    background-color: antiquewhite;
+   
+}
+
+.marca{
+    height: 50px;
+    background-color: #494847;   
+}
+
+.marca h1{
+    color: white;
+    display: flex;
+    justify-content:center;
+    align-items: center; 
 }
 
 .banner-nacional a{
@@ -101,10 +113,15 @@ footer img{
     width: 60px;
     margin: 15px;   
 }
+
+
+
+/* Pagina Nacional */
+
 .container{
     width: auto;
     height: auto;    
-    
+    background-color: antiquewhite;
     
 }
 
