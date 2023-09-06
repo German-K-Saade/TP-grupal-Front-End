@@ -144,11 +144,11 @@ footer img{
 
 @media (max-width: 768px) {
     header {
-        padding: 0 10px; /* Reduce padding on smaller screens */
+        padding: 0 10px; 
     }
 
     header a {
-        font-size: 24px; /* Decrease font size for smaller screens */
+        font-size: 24px; 
     }
 
     header a img {
@@ -231,6 +231,7 @@ body {
     margin: 5% auto;
     padding: 20px;
     border-radius: 10px;
+    flex-direction: column;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -277,7 +278,7 @@ input[type="submit"]:hover {
 }
 
 
-/* Estilos para pantallas pequeñas (móviles) */
+/* Estilos para pantallas pequeñas  */
 @media screen and (max-width: 767px) {
     .contenedor {
         margin: 5% 10px; /* Reducimos el margen izquierdo y derecho */
