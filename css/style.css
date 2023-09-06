@@ -9,6 +9,7 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+
 /* Pagina Index*/
 
 body{
@@ -114,6 +115,36 @@ footer img{
     margin: 15px;   
 }
 
+@media (max-width: 768px) {
+    header {
+        padding: 0 10px; /* Reduce padding on smaller screens */
+    }
+
+    header a {
+        font-size: 24px; /* Decrease font size for smaller screens */
+    }
+
+    header a img {
+        height: 50px;
+        width: 50px;
+    }
+
+    header nav a {
+        font-size: 14px;
+    }
+
+    .banner {
+        height: 300px;
+    }
+
+    .marca h1 {
+        font-size: 24px;
+    }
+
+    .banner a {
+        font-size: 24px;
+    }
+}
 
 
 /* Pagina Nacional */
