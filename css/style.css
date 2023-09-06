@@ -149,10 +149,14 @@ footer img{
 
 /* Pagina Nacional */
 
+
 .container{
     width: auto;
-    height: auto;    
-    background-color: antiquewhite;
+    height: auto;   
+    position: relative;
+    left: 400px;
+
+    
     
 }
 
@@ -165,31 +169,28 @@ footer img{
 }
 
 .caja2{
-    width: 400px;
-    height: 200px;
+    width: 600px;
+    height: 300px;
   
 
 }
 
 .caja3{
-    width: 400px;
-    height: 200px;
+    width: 500px;
+    height: 300px;
     
 }
 .caja4{
-    width: 400px;
-    height: 200px;
- 
-    
-}
-
-.caja5{
-    width: 400px;
+    width: 500px;
     height: 300px;
  
     
 }
-
+.caja5{
+    width: 500px;
+    height: 300px;
+    
+}
 /* Contacto */
 /* Estilos generales */
 body {
