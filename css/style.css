@@ -9,7 +9,34 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+/* Estilo base para todos los tamaños de pantalla */
+nav {
+    font-family: "Raleway", sans-serif;
+    font-size: 30px; /* Tamaño de fuente predeterminado */
+}
 
+/* Estilos específicos para pantallas más pequeñas  */
+@media (max-width: 768px) {
+    nav {
+        font-size: 20px; 
+    }
+}
+
+/* Estilos específicos para pantallas medianas */
+@media (min-width: 769px) and (max-width: 1024px) {
+    nav {
+        font-size: 24px;
+    }
+}
+
+/* Estilos específicos para pantallas grandes  */
+@media (min-width: 1025px) {
+    nav {
+        font-size: 30px; 
+    }
+}
+
+ 
 /* Pagina Index*/
 
 body{
