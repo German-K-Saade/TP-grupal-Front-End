@@ -156,14 +156,16 @@ footer img{
 /* Estilos generales */
 body {
     font-family: "Raleway", sans-serif;
-    background-color: #494847a4;
+    background-color: #aaa4a4;
 }
 
 .contenedor {
-    background-color: #9cd3d3c5;
+    background-color: #4b4444;
     max-width: 600px;
-    margin: 5% auto; /* Centramos vertical y horizontalmente */
+    margin: 5% auto;
     padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .form-group {
@@ -173,6 +175,7 @@ body {
 label {
     display: block;
     margin-bottom: 5px;
+    font-weight: bold;
 }
 
 input[type="text"],
@@ -183,6 +186,14 @@ textarea {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #4c00ff;
 }
 
 input[type="submit"] {
@@ -192,7 +203,13 @@ input[type="submit"] {
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
+
+input[type="submit"]:hover {
+    background-color: #3800d0;
+}
+
 
 /* Estilos para pantallas pequeñas (móviles) */
 @media screen and (max-width: 767px) {
