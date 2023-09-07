@@ -57,6 +57,7 @@ header a {
 header {
     width: auto;
     margin: auto;
+    padding: 10px;
     height: 100px;
     display: flex;
     justify-content: space-between;
@@ -69,18 +70,23 @@ header {
 header a img {
     height: 70px;
     width: 70px;
-    margin: 10px;
+    margin: auto;
     vertical-align: middle;
     
 }
 
 header nav a{
-    margin: 15px;
+    margin: 5px;
     font-family: "Raleway", sans-serif;
     font-size: 17px;
     font-weight: bold;    
-    color: black;
+    color:whitesmoke;
+    background-color: #aaa4a4;
+    padding: 15px 25px;
+    border-radius: 5px;
 }
+
+
 
 .banner-nacional{
     height: 400px;
