@@ -42,6 +42,7 @@ nav {
 body{
     font-family: "Raleway", sans-serif;
     font-weight: 300px;
+    background-color: #aaa4a4;
 
 }
 
@@ -220,10 +221,6 @@ footer img{
 }
 /* Contacto */
 /* Estilos generales */
-body {
-    font-family: "Raleway", sans-serif;
-    background-color: #aaa4a4;
-}
 
 .contenedor {
     background-color: #4b4444;
