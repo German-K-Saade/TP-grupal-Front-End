@@ -89,6 +89,7 @@ header nav a{
 .nav-boton:hover{
     background-color: #888585 ;
     padding: 20px 30px;
+    margin: auto;
 }
 
 .banner-nacional{
