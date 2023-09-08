@@ -86,10 +86,14 @@ header nav a{
     border-radius: 5px;
 }
 
-
+.nav-boton:hover{
+    background-color: #888585 ;
+    padding: 20px 30px;
+}
 
 .banner-nacional{
     height: 400px;
+    margin: 5px 0px 5px 0px;
     background-image: url(../img/chalten6.jpg);
     background-size: auto;
     background-position:center center;
@@ -99,6 +103,7 @@ header nav a{
 
 .banner-internacional{
     height: 400px;
+    margin: 5px 0px 5px 0px;
     background-image:url(../img/roma1.jpg);
     background-size:cover;
     background-position:center center;
