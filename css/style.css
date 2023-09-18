@@ -298,6 +298,68 @@ input[type="submit"]:hover {
     }
 }
 
+/* Pagina Promociones */
+
+.Container {
+    padding: 2%;
+    width: 80%; 
+    margin: 0 auto; 
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+}
+
+/* Estilos para las secciones */
+.Container section {
+    width: 48%; 
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+
+/* Estilos para los títulos de las secciones */
+.Container section h1 {
+    color: #bae751;
+    font-size: 24px;
+}
+
+/* Estilos para los elementos de la lista en cada sección */
+.Container section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Estilos para el precio en cada sección */
+.Container section p {
+    color: #3c80e7;
+    font-size: 20px;
+    font-weight: bold;
+}
+.Container section p2 {
+    color: #ec8dadb2;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Establece el espaciado entre las columnas */
+.Container section + section {
+    margin-left: 2%; 
+}
+
+@media (max-width: 768px) {
+    .Container {
+        width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+        padding: 0 10px; /* Reduce el espacio de relleno en los lados */
+    }
+
+    .Container section {
+        width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+    }
+}
+
 
 
 
