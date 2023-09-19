@@ -190,46 +190,75 @@ footer img{
 /* Pagina Nacional */
 
 
-.container{
-    width: auto;
-    height: auto;   
-    position: relative;
-    left: 500px;
 
-    
-    
+.title {
+
+    text-align: center;
 }
 
-.caja1{
 
-    width: 400px;
-    height: 100px;
-  
+.container{
+    width: 80vw;
+    height: 300vh;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+    left: 175px;
+      
+}
     
+    
+.caja1{
+    width: 500px;
+    height: 400px;
+    padding: 10px;
+    text-align: justify;
+
 }
 
 .caja2{
-    width: 600px;
-    height: 280px;
-  
-
+    width: 500px;
+    height: 400px;
+    padding: 10px;
+    text-align: justify;
+    
 }
 
 .caja3{
+
     width: 500px;
-    height: 280px;
-    
+    height: 600px;
+    padding: 10px;
+    text-align: justify;
+
 }
+
 .caja4{
     width: 500px;
-    height: 280px;
- 
-    
+    height: 600px;
+    padding: 10px;
+    text-align: justify;
+
+
 }
+
 .caja5{
     width: 500px;
-    height: 280px;
-    
+    height: 600px;
+    padding: 10px;
+    text-align: justify;
+
+
+}
+
+.caja6{
+    width: 500px;
+    height: 600px;
+    padding: 10px;
+    text-align: justify;
+
 }
 /* Contacto */
 /* Estilos generales */
