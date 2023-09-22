@@ -36,20 +36,14 @@
     }
 }*/
 
- 
-/* Pagina Index*/
-
-body{
-    font-family: "Raleway", sans-serif;
-    font-weight: 300px;
-    background-color: #aaa4a4;
-
-}
+/*---------------------------------------------------------------------------
+                        PAGINA INDEX
+----------------------------------------------------------------------------*/
 
 header{
   width: 100%;
   background-color: #494847;
-  display: flex;
+  display:flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
@@ -59,13 +53,16 @@ header{
 .nav-list{
   list-style-type: none;
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
 
+}
+.nav-list li a:hover{
+  color: #c0f1fa;
 }
 
 .nav-list li a{
   font-family: "Raleway", sans-serif;
-  font-weight:bold;
+  font-size: 1.3rem;
   text-decoration: none;
   color: white;
 }
@@ -76,31 +73,69 @@ header{
 
 .logo{
   display: flex;
-  align-items: center;
   gap: 1rem;
 }
 
 .logo h2{
   font-family: 'Pacifico', cursive;
   font-weight: lighter;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color:white;
+  display: flex;
+  align-items: center;
     
 }
 
-.abrir-menu{
+.abrir-menu,
+.cerrar-menu{
   display: none;
-  margin-right: 1rem;
 }
 
-@media screen and ( max-width: 720px) {
-  .abrir-menu{
+@media screen and ( max-width: 1024px) {
+  .abrir-menu,
+  .cerrar-menu{
     display: block;
+    border: 0;
+    font-size: 1.5rem;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
   }
-  .nav-list{
+
+  .nav{
     display: none;
   }
+
+  .nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgb(10, 9, 9) ;
+    padding: 2rem;
+    box-shadow:0 0 0 100vmax  rgba(66, 66, 64, 0.582);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .nav.visible{
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .nav-list{
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
 }
+
+
 /*header {
     width: auto;
     margin: auto;
@@ -138,6 +173,13 @@ header{
     padding: 10px 15px;
     margin: auto;
 }*/
+
+body{
+  font-family: "Raleway", sans-serif;
+  font-weight: 300px;
+  background-color: #aaa4a4;
+
+}
 
 .banner-nacional{
     height: 400px;
@@ -201,7 +243,7 @@ footer img{
     width: 60px;
     margin: 15px;   
 }
-
+  
 @media (max-width: 768px) {
     header {
         padding: 0 10px; 
@@ -219,7 +261,7 @@ footer img{
     header nav a {
         font-size: 14px;
     }
-
+    
     .banner {
         height: 300px;
     }
