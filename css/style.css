@@ -10,51 +10,133 @@
     text-decoration: none;
 }
 /* Estilo base para todos los tamaños de pantalla */
-nav {
+/*nav {
     font-family: "Raleway", sans-serif;
-    font-size: 30px; /* Tamaño de fuente predeterminado */
-}
+    font-size: 30px; Tamaño de fuente predeterminado 
+}*/
 
 /* Estilos específicos para pantallas más pequeñas  */
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
     nav {
         font-size: 20px; 
     }
-}
+}*/
 
 /* Estilos específicos para pantallas medianas */
-@media (min-width: 769px) and (max-width: 1024px) {
-    nav {
+/*@media (min-width: 769px) and (max-width: 1024px) {
+    nav  {
         font-size: 24px;
     }
-}
+}*/
 
 /* Estilos específicos para pantallas grandes  */
-@media (min-width: 1025px) {
+/*@media (min-width: 1025px) {
     nav {
         font-size: 30px; 
     }
+}*/
+
+/*---------------------------------------------------------------------------
+                        PAGINA INDEX
+----------------------------------------------------------------------------*/
+
+header{
+  width: 100%;
+  background-color: #494847;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  
 }
 
- 
-/* Pagina Index*/
-
-body{
-    font-family: "Raleway", sans-serif;
-    font-weight: 300px;
-    background-color: #aaa4a4;
+.nav-list{
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
 
 }
+.nav-list li a:hover{
+  color: #c0f1fa;
+}
 
-header a {
-    font-family: 'Pacifico', cursive;
-    font-size: 30px;
-    color:#3352cc;
-    vertical-align: middle;
+.nav-list li a{
+  font-family: "Raleway", sans-serif;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: white;
+}
+
+.logo img{
+  max-width: 5rem;
+}
+
+.logo{
+  display: flex;
+  gap: 1rem;
+}
+
+.logo h2{
+  font-family: 'Pacifico', cursive;
+  font-weight: lighter;
+  font-size: 2rem;
+  color:white;
+  display: flex;
+  align-items: center;
     
 }
 
-header {
+.abrir-menu,
+.cerrar-menu{
+  display: none;
+}
+
+@media screen and ( max-width: 1024px) {
+  .abrir-menu,
+  .cerrar-menu{
+    display: block;
+    border: 0;
+    font-size: 1.5rem;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .nav{
+    display: none;
+  }
+
+  .nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgb(10, 9, 9) ;
+    padding: 2rem;
+    box-shadow:0 0 0 100vmax  rgba(66, 66, 64, 0.582);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .nav.visible{
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .nav-list{
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+}
+
+
+/*header {
     width: auto;
     margin: auto;
     padding: 10px;
@@ -65,31 +147,38 @@ header {
     background-color: #494847;
 
 
-}
+}*/
 
-header a img {
+/*header a img {
     height: 70px;
     width: 70px;
     margin: auto;
     vertical-align: middle;
     
-}
+}*/
 
-header nav a{
+/*header nav a{
     margin: 5px;
     font-family: "Raleway", sans-serif;
     font-size: 17px;
     font-weight: bold;    
     color:whitesmoke;
-    background-color: #aaa4a4;
-    padding: 15px 25px;
+    /*background-color: #aaa4a4;
+    padding: 5px 10px;
     border-radius: 5px;
-}
+}*/
 
-.nav-boton:hover{
+/*.nav-boton:hover{
     background-color: #888585 ;
-    padding: 20px 30px;
+    padding: 10px 15px;
     margin: auto;
+}*/
+
+body{
+  font-family: "Raleway", sans-serif;
+  font-weight: 300px;
+  background-color: #aaa4a4;
+
 }
 
 .banner-nacional{
@@ -154,7 +243,7 @@ footer img{
     width: 60px;
     margin: 15px;   
 }
-
+  
 @media (max-width: 768px) {
     header {
         padding: 0 10px; 
@@ -172,7 +261,7 @@ footer img{
     header nav a {
         font-size: 14px;
     }
-
+    
     .banner {
         height: 300px;
     }
