@@ -278,8 +278,6 @@ footer img{
 
 /* Pagina Nacional */
 
-
-
 .title {
 
     text-align: center;
@@ -304,6 +302,8 @@ footer img{
     height: 400px;
     padding: 10px;
     text-align: justify;
+    background-color:rgba(237, 247, 185, 0.747)
+     
 
 }
 
@@ -312,41 +312,68 @@ footer img{
     height: 400px;
     padding: 10px;
     text-align: justify;
+    background-color:rgba(237, 247, 185, 0.747)
+     
     
 }
 
 .caja3{
 
     width: 500px;
-    height: 600px;
+    height: 400px;
     padding: 10px;
     text-align: justify;
-
+    
+     
 }
 
 .caja4{
     width: 500px;
-    height: 600px;
+    height: 400px;
     padding: 10px;
     text-align: justify;
-
-
+    
+     
 }
 
 .caja5{
     width: 500px;
-    height: 600px;
+    height: 400px;
     padding: 10px;
     text-align: justify;
-
-
+    
 }
 
 .caja6{
     width: 500px;
-    height: 600px;
+    height: 400px;
     padding: 10px;
     text-align: justify;
+    margin-left: 10px;
+}
+
+.galeria{
+    width: 420px;
+    height: 80px;
+    margin-left: 5px;
+
+}
+
+.lista-imagenes img { 
+    
+    width: 100%; 
+    object-fit: cover;
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+    display: block;
+}
+ 
+
+.lista-imagenes{
+    
+  display: flex;
+  overflow-y: auto;
 
 }
 /* Contacto */
