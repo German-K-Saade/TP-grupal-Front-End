@@ -9,32 +9,6 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-/* Estilo base para todos los tamaños de pantalla */
-/*nav {
-    font-family: "Raleway", sans-serif;
-    font-size: 30px; Tamaño de fuente predeterminado 
-}*/
-
-/* Estilos específicos para pantallas más pequeñas  */
-/*@media (max-width: 768px) {
-    nav {
-        font-size: 20px; 
-    }
-}*/
-
-/* Estilos específicos para pantallas medianas */
-/*@media (min-width: 769px) and (max-width: 1024px) {
-    nav  {
-        font-size: 24px;
-    }
-}*/
-
-/* Estilos específicos para pantallas grandes  */
-/*@media (min-width: 1025px) {
-    nav {
-        font-size: 30px; 
-    }
-}*/
 
 /*---------------------------------------------------------------------------
                         PAGINA INDEX
@@ -93,12 +67,12 @@ header{
 
 /*---------------NAV-RESPONSIVE--------------*/
 
-@media screen and ( max-width: 1024px) {
+@media screen and ( max-width: 768px) {
   .abrir-menu,
   .cerrar-menu{
     display: block;
     border: 0;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: white;
     background-color: transparent;
     cursor: pointer;
@@ -145,10 +119,32 @@ header{
   }
 
   header {
-    padding: 0.5rem; 
+    padding: 0.3rem; 
+}
 }
 
+@media (min-width: 769px) and (max-width: 1080px) {
+  .nav-list li a{
+    font-size: 1rem;
+  }
+
+  .logo img{
+    max-width: 3.5rem;
+  }
+
+  .logo h2{
+    font-size: 1.5rem;     
+  }
+
+  .nav-list{
+    gap: 1rem;
+  
+  }
+
 }
+
+
+
 
 
 /*----------BANNER---------*/
@@ -226,39 +222,6 @@ footer img{
     width: 60px;
     margin: 15px;   
 }
-
-/*
-@media (max-width: 768px) {
-    header {
-        padding: 0 10px; 
-    }
-
-    header a {
-        font-size: 24px; 
-    }
-
-    header a img {
-        height: 50px;
-        width: 50px;
-    }
-
-    header nav a {
-        font-size: 14px;
-    }
-    
-    .banner {
-        height: 300px;
-    }
-
-    .marca h1 {
-        font-size: 24px;
-    }
-
-    .banner a {
-        font-size: 24px;
-    }
-}
-*/
 
 /*---------------------------------------------------------------------------
                         PAGINA ARGENTINA
@@ -425,7 +388,7 @@ input[type="submit"]:hover {
 
 
 /* Estilos para pantallas pequeñas  */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .contenedor {
         margin: 5% 10px; /* Reducimos el margen izquierdo y derecho */
     }
