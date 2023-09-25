@@ -235,14 +235,14 @@ footer img{
 
 .container{
 
-    width: 1100px;
-    height: 1700px;
+    width: 80%;
+    height: 80%;
     display: flex;
     flex-direction:row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     position: relative;
-    left: 175px;
+    left: 10%;
       
 }
     
@@ -252,7 +252,9 @@ footer img{
     height: 400px;
     padding: 10px;
     text-align: justify;
+    margin-bottom: 10px;
     background-color:rgba(237, 247, 185, 0.747)
+    
      
 
 }
@@ -273,7 +275,9 @@ footer img{
     height: 400px;
     padding: 10px;
     text-align: justify;
+    margin-bottom: 10px;
     background-color:rgba(237, 247, 185, 0.747)
+
      
 }
 
@@ -291,6 +295,7 @@ footer img{
     height: 400px;
     padding: 10px;
     text-align: justify;
+    margin-bottom: 50px;
      background-color:rgba(237, 247, 185, 0.747)
 }
 
@@ -300,7 +305,7 @@ footer img{
     padding: 10px;
     text-align: justify;
     margin-left: 10px;
-     background-color:rgba(237, 247, 185, 0.747)
+    background-color:rgba(237, 247, 185, 0.747)
 }
 
 .galeria{
@@ -408,6 +413,7 @@ footer img{
     color: grey;
    
 }
+
 
 
 
