@@ -91,6 +91,8 @@ header{
   display: none;
 }
 
+/*---------------NAV-RESPONSIVE--------------*/
+
 @media screen and ( max-width: 1024px) {
   .abrir-menu,
   .cerrar-menu{
@@ -133,46 +135,23 @@ header{
     gap: 1rem;
   }
 
+  .logo img{
+    max-width: 3rem;
+  }
+  
+  .logo h2{
+    font-size: 1.2rem;
+      
+  }
+
+  header {
+    padding: 0.5rem; 
+}
+
 }
 
 
-/*header {
-    width: auto;
-    margin: auto;
-    padding: 10px;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #494847;
-
-
-}*/
-
-/*header a img {
-    height: 70px;
-    width: 70px;
-    margin: auto;
-    vertical-align: middle;
-    
-}*/
-
-/*header nav a{
-    margin: 5px;
-    font-family: "Raleway", sans-serif;
-    font-size: 17px;
-    font-weight: bold;    
-    color:whitesmoke;
-    /*background-color: #aaa4a4;
-    padding: 5px 10px;
-    border-radius: 5px;
-}*/
-
-/*.nav-boton:hover{
-    background-color: #888585 ;
-    padding: 10px 15px;
-    margin: auto;
-}*/
+/*----------BANNER---------*/
 
 body{
   font-family: "Raleway", sans-serif;
@@ -185,17 +164,17 @@ body{
     height: 400px;
     margin: 5px 0px 5px 0px;
     background-image: url(../img/chalten6.jpg);
-    background-size: auto;
+    background-size: cover;
     background-position:center center;
     display: flex;
 
 }
 
 .banner-internacional{
-    height: 400px;
+    height: 50vh;
     margin: 5px 0px 5px 0px;
     background-image:url(../img/roma1.jpg);
-    background-size:cover;
+    background-size: cover;
     background-position:center center;
     display: flex;
     
@@ -231,6 +210,10 @@ main{
     margin: auto;
 }
 
+
+
+/*------------FOOTER---------*/
+
 footer{
     background-color: #494847;
     height: 200px;
@@ -243,7 +226,8 @@ footer img{
     width: 60px;
     margin: 15px;   
 }
-  
+
+/*
 @media (max-width: 768px) {
     header {
         padding: 0 10px; 
@@ -274,9 +258,11 @@ footer img{
         font-size: 24px;
     }
 }
+*/
 
-
-/* Pagina Nacional */
+/*---------------------------------------------------------------------------
+                        PAGINA ARGENTINA
+----------------------------------------------------------------------------*/
 
 .title {
 
@@ -376,7 +362,11 @@ footer img{
   overflow-y: auto;
 
 }
-/* Contacto */
+
+/*---------------------------------------------------------------------------
+                        PAGINA CONTACTO
+----------------------------------------------------------------------------*/
+
 /* Estilos generales */
 
 .contenedor {
@@ -445,7 +435,10 @@ input[type="submit"]:hover {
     }
 }
 
-/* Pagina Promociones */
+/*---------------------------------------------------------------------------
+                        PAGINA PROMOCIONES
+----------------------------------------------------------------------------*/
+
 /* Estilos para el contenedor */
 /* Establece un estilo de fuente y tamaño de fuente predeterminados para toda la página */
 body {
@@ -915,7 +908,9 @@ Credit Card
   }
 }
 
-
+/*---------------------------------------------------------------------------
+                        PAGINA INTERNACIONALES
+----------------------------------------------------------------------------*/
 
 
 
