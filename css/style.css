@@ -252,7 +252,7 @@ footer img{
     height: 500px;
     padding: 10px;
     text-align: justify;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     background-color:rgba(237, 247, 185, 0.747)
     
      
@@ -264,6 +264,7 @@ footer img{
     height: 500px;
     padding: 10px;
     text-align: justify;
+    margin-top: 5px;
     background-color:rgba(237, 247, 185, 0.747)
      
     
@@ -275,7 +276,7 @@ footer img{
     height: 500px;
     padding: 10px;
     text-align: justify;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     background-color:rgba(237, 247, 185, 0.747)
 
      
@@ -286,6 +287,7 @@ footer img{
     height: 500px;
     padding: 10px;
     text-align: justify;
+      margin-top: 5px;
      background-color:rgba(237, 247, 185, 0.747)
      
 }
@@ -295,7 +297,7 @@ footer img{
     height: 500px;
     padding: 10px;
     text-align: justify;
-    margin-bottom: 50px;
+    margin-bottom: 5px;
      background-color:rgba(237, 247, 185, 0.747)
 }
 
@@ -305,6 +307,7 @@ footer img{
     padding: 10px;
     text-align: justify;
     margin-left: 10px;
+    margin-top: 5px;
     background-color:rgba(237, 247, 185, 0.747)
 }
 
