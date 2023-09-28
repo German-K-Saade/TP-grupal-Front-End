@@ -494,111 +494,121 @@ input[type="submit"]:hover {
 /*---------------------------------------------------------------------------
                         PAGINA PROMOCIONES
 ----------------------------------------------------------------------------*/
-
-/* Estilos para el contenedor */
-/* Establece un estilo de fuente y tamaño de fuente predeterminados para toda la página */
+/* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  color: black;
 }
 
-/* Establece el color del texto en negro */
-.texto {
-    color: black;
-}
-
-/* Estilos para el contenedor principal */
+/* Contenedor principal */
 .Container {
-    padding: 2%;
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    
+  background-image: url("../img/fondo\ promos.jfif");
+  width: 100%;
+  margin: 0 auto;
+  padding: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-/* Estilos para las secciones */
+/* Contenedor de las cartas */
+.card-container {
+  width: 190px;
+  height: 254px;
+  background: transparent;
+  position: relative;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.438);
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/* Secciones (tarjetas) */
 .Container section {
-    width: 48%;
-    background-color: #f0f0f0;
-    padding: 20px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-    text-align: center;
-    font-family: Arial, sans-serif;
+  cursor: default;
+  width: 600px;
+  height: 700px;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 5px; /* Espacio entre las tarjetas */
+  display: flex;
+  flex-direction: column; /* Cambiamos la dirección a columna para el contenido */
+  align-items: center;
+  justify-content: center;
+  font-size: 18px; /* Tamaño de fuente reducido */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #212121;
+  background-color: rgba(255, 255, 255, 0.074);
+  border: 1px solid rgba(255, 255, 255, 0.222);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  transition: all ease 0.3s;
 }
 
-
-/* Agrega efecto al pasar el mouse sobre las secciones */
+/* Efecto al pasar el mouse sobre las secciones */
 .Container section:hover {
-    transform: scale(1.02); /* Escala ligeramente la sección */
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Añade una sombra al pasar el mouse */
+  transform: scale(1.02);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Estilos para los títulos de las secciones */
+/* Títulos de las secciones */
 .Container section h1 {
-    color: #6fe751;
-    font-size: 24px;
-    margin-bottom: 10px; /* Agrega espacio debajo del título */
+  color: #000000;
+  font-size: 20px; /* Tamaño de fuente ajustado */
+  margin-bottom: 10px;
 }
 
-/* Estilos para los elementos de la lista en cada sección */
+/* Elementos de la lista en cada sección */
 .Container section ul {
-    list-style-type: disc;
-    margin-left: 20px;
+  list-style-type: disc;
+  margin-left: 20px;
 }
 
-/* Estilos para el precio en cada sección */
+/* Precio en cada sección */
 .Container section p {
-    color: #032a64;
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 10px; /* Agrega espacio encima del precio */
+  color: #040fac;
+  font-size: 20px; /* Tamaño de fuente ajustado */
+  font-weight: bold;
+  margin-top: 10px;
 }
 
-/* Estilos para el texto adicional (p2) en cada sección */
+/* Texto adicional (p2) en cada sección */
 .Container section p2 {
-    color: #e22766b2;
-    font-size: 18px; /* Reduce ligeramente el tamaño de fuente */
-    font-weight: bold;
-    margin-top: 5px; /* Agrega espacio encima del texto adicional */
+  color: #02000eb2;
+  font-size: 20px; /* Tamaño de fuente ajustado */
+  font-weight: bold;
+  margin-top: 5px;
 }
 
-
-/* Estilos para el contenedor "pagos" */
+/* Contenedor "pagos" */
 .pagos {
-    width: 300px;
-    max-width: 100%; /* Asegura que el ancho máximo sea 100% para dispositivos pequeños */
-    height: auto;
-    border: 2px solid #ccc;
-    margin: 10px auto;
-    border-radius: 10px;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #ccc;
+  margin: 10px auto;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 }
 
-/* Establece el espaciado entre las columnas */
+/* Espaciado entre las columnas */
 .Container section + section {
-    margin-left: 2%;
+  margin-left: 2%;
 }
 
-
+/* Estilos para pantallas pequeñas (máximo 768px de ancho) */
 @media (max-width: 768px) {
-    .Container {
-        width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
-        padding: 0 10px; /* Reduce el espacio de relleno en los lados */
-    }
+  .Container {
+      width: 100%;
+      padding: 0 10px;
+  }
 
-    .Container section {
-        width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
-    }
+  .Container section {
+      width: 100%;
+  }
 }
 
 /* Formulario de pagos */
@@ -613,7 +623,7 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 body {
-  background: white;
+  background-image: url("../img/fondo\ promos.jfif");
 }
 
 
