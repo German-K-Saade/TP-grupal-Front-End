@@ -234,7 +234,7 @@ body {
 
 /* Contenedor principal */
 .Container {
-  background-image: url("../img/fondo\ promos.jfif");
+  background-image: url("/img/Fondo.jpeg");
   width: 100%;
   margin: 0 auto;
   padding: 5%;
@@ -351,9 +351,6 @@ html,
 body {
   min-height: 100%;
   font-family: 'Open Sans', sans-serif;
-}
-body {
-  background-image: url("../img/fondo\ promos.jfif");
 }
 
 
