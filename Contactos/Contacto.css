@@ -301,6 +301,7 @@ input[type="submit"]:hover {
 ----------------------------------------------------------------------------*/
 /* Estilos generales */
 body {
+  background-image: url("/img/Fondo.jpeg");
   font-family: Arial, sans-serif;
   font-size: 20px;
   line-height: 1.5;
@@ -309,7 +310,6 @@ body {
 
 /* Contenedor principal */
 .Container {
-  background-image: url("../img/fondo\ promos.jfif");
   width: 100%;
   margin: 0 auto;
   padding: 5%;
@@ -427,9 +427,7 @@ body {
   min-height: 100%;
   font-family: 'Open Sans', sans-serif;
 }
-body {
-  background-image: url("../img/fondo\ promos.jfif");
-}
+
 
 
 /*--------------------
