@@ -1,0 +1,786 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/* Globales*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/*---------------------------------------------------------------------------
+                        PAGINA INDEX
+----------------------------------------------------------------------------*/
+
+header{
+  width: 100%;
+  background-color: #494847;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  
+}
+
+.nav-list{
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+
+}
+.nav-list li a:hover{
+  color: #c0f1fa;
+}
+
+.nav-list li a{
+  font-family: "Raleway", sans-serif;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: white;
+}
+
+.logo img{
+  max-width: 5rem;
+}
+
+.logo{
+  display: flex;
+  gap: 1rem;
+}
+
+.logo h2{
+  font-family: 'Pacifico', cursive;
+  font-weight: lighter;
+  font-size: 2rem;
+  color:white;
+  display: flex;
+  align-items: center;
+    
+}
+
+.abrir-menu,
+.cerrar-menu{
+  display: none;
+}
+
+/*---------------NAV-RESPONSIVE--------------*/
+
+@media screen and ( max-width: 768px) {
+  .abrir-menu,
+  .cerrar-menu{
+    display: block;
+    border: 0;
+    font-size: 2rem;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .nav{
+    display: none;
+  }
+
+  .nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgb(10, 9, 9) ;
+    padding: 2rem;
+    box-shadow:0 0 0 100vmax  rgba(66, 66, 64, 0.582);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .nav.visible{
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .nav-list{
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .logo img{
+    max-width: 3rem;
+  }
+  
+  .logo h2{
+    font-size: 1.2rem;
+      
+  }
+
+  header {
+    padding: 0.3rem; 
+}
+}
+
+@media (min-width: 769px) and (max-width: 1080px) {
+  .nav-list li a{
+    font-size: 1rem;
+  }
+
+  .logo img{
+    max-width: 3.5rem;
+  }
+
+  .logo h2{
+    font-size: 1.5rem;     
+  }
+
+  .nav-list{
+    gap: 1rem;
+  
+  }
+
+}
+
+
+
+
+
+/*----------BANNER---------*/
+
+body{
+  font-family: "Raleway", sans-serif;
+  font-weight: 300px;
+  background-color: #aaa4a4;
+
+}
+
+.banner-nacional{
+    height: 400px;
+    margin: 5px 0px 5px 0px;
+    background-image: url(../img/chalten6.jpg);
+    background-size: cover;
+    background-position:center center;
+    display: flex;
+
+}
+
+.banner-internacional{
+    height: 50vh;
+    margin: 5px 0px 5px 0px;
+    background-image:url(../img/roma1.jpg);
+    background-size: cover;
+    background-position:center center;
+    display: flex;
+    
+}
+
+main{
+    width: auto;
+    margin: auto;
+   
+}
+
+.marca{
+    height: 50px;
+    background-color: #494847;   
+}
+
+.marca h1{
+    color: white;
+    display: flex;
+    justify-content:center;
+    align-items: center; 
+}
+
+.banner-nacional a{
+    color: white;
+    font-size: 32px;
+    margin: auto;
+}
+
+.banner-internacional a{
+    color: white;
+    font-size: 32px;
+    margin: auto;
+}
+
+
+
+/*------------FOOTER---------*/
+
+footer{
+    background-color: #494847;
+    height: 200px;
+    display: flex;
+    justify-content:right;
+    align-items: center;    
+}
+
+footer img{
+    width: 60px;
+    margin: 15px;   
+}
+
+
+/*---------------------------------------------------------------------------
+                        PAGINA CONTACTO
+----------------------------------------------------------------------------*/
+
+/* Estilos generales */
+
+.contenedor {
+    background: #22313f96;
+    max-width: 600px;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 10px;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(247, 244, 244, 0.603);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+/* Establece un estilo cuando los campos de entrada tienen foco */
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #4c00ff;
+}
+
+input[type="submit"] {
+    background-color: #4c00ff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Cambia el color del botón cuando se pasa el mouse sobre él */
+input[type="submit"]:hover {
+    background-color: #3800d0;
+}
+
+
+/* Estilos para pantallas pequeñas  */
+@media screen and (max-width: 768px) {
+    .contenedor {
+        margin: 5% 10px; /* Reducimos el margen izquierdo y derecho */
+    }
+    
+    input[type="submit"] {
+        width: 100%; /* Aseguramos que el botón ocupe todo el ancho */
+    }
+}
+
+/*---------------------------------------------------------------------------
+                        PAGINA PROMOCIONES
+----------------------------------------------------------------------------*/
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  color: black;
+}
+
+/* Contenedor principal */
+.Container {
+  background-image: url("../img/fondo\ promos.jfif");
+  width: 100%;
+  margin: 0 auto;
+  padding: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Contenedor de las cartas */
+.card-container {
+  width: 190px;
+  height: 254px;
+  background: transparent;
+  position: relative;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.438);
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/* Secciones (tarjetas) */
+.Container section {
+  cursor: default;
+  width: 600px;
+  height: 700px;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 5px; /* Espacio entre las tarjetas */
+  display: flex;
+  flex-direction: column; /* Cambiamos la dirección a columna para el contenido */
+  align-items: center;
+  justify-content: center;
+  font-size: 18px; /* Tamaño de fuente reducido */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #212121;
+  background-color: rgba(255, 255, 255, 0.074);
+  border: 1px solid rgba(255, 255, 255, 0.222);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  transition: all ease 0.3s;
+}
+
+/* Efecto al pasar el mouse sobre las secciones */
+.Container section:hover {
+  transform: scale(1.02);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Títulos de las secciones */
+.Container section h1 {
+  color: #000000;
+  font-size: 20px; /* Tamaño de fuente ajustado */
+  margin-bottom: 10px;
+}
+
+/* Elementos de la lista en cada sección */
+.Container section ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+/* Precio en cada sección */
+.Container section p {
+  color: #040fac;
+  font-size: 20px; /* Tamaño de fuente ajustado */
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Texto adicional (p2) en cada sección */
+.Container section p2 {
+  color: #02000eb2;
+  font-size: 20px; /* Tamaño de fuente ajustado */
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* Contenedor "pagos" */
+.pagos {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #ccc;
+  margin: 10px auto;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Espaciado entre las columnas */
+.Container section + section {
+  margin-left: 2%;
+}
+
+/* Estilos para pantallas pequeñas (máximo 768px de ancho) */
+@media (max-width: 768px) {
+  .Container {
+      width: 100%;
+      padding: 0 10px;
+  }
+
+  .Container section {
+      width: 100%;
+  }
+}
+
+/* Formulario de pagos */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html,
+body {
+  min-height: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+body {
+  background-image: url("../img/fondo\ promos.jfif");
+}
+
+
+/*--------------------
+Buttons
+--------------------*/
+.btn {
+  display: block;
+  background: hsl(86, 76%, 71%);
+  color: hsl(0, 0, 100);
+  text-decoration: none;
+  margin: 20px 0;
+  padding: 15px 15px;
+  border-radius: 5px;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .2s ease-in-out;
+    box-shadow: inset 0 3px 0 hsla(0, 0, 0, 0), 0 3px 3px hsla(0, 0, 0, .2);
+    border-radius: 5px;
+  }
+
+  &:hover::after {
+    background: hsla(0, 0, 0, 0.1);
+    box-shadow: inset 0 3px 0 hsla(0, 0, 0, 0.2);
+  }
+
+}
+
+/*--------------------
+Form
+--------------------*/
+.form {
+
+  fieldset {
+    border: none;
+    padding: 0;
+    padding: 10px 0;
+    position: relative;
+    clear: both;
+
+    &.fieldset-expiration {
+      float: left;
+      width: 60%;
+
+      & .select {
+        width: 84px;
+        margin-right: 12px;
+        float: left;
+      }
+    }
+
+    &.fieldset-ccv {
+      clear: none;
+      float: right;
+      width: 86px;
+    }
+
+    label {
+      display: block;
+      text-transform: uppercase;
+      font-size: 11px;
+      color: hsla(0, 0, 0, .6);
+      margin-bottom: 5px;
+      font-weight: bold;
+      font-family: Inconsolata;
+    }
+
+    input,
+    .select {
+      width: 100%;
+      height: 38px;
+      color: hsl(0, 0, 20);
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 15px;
+      outline: none!important;
+      border: 1px solid hsla(0, 0, 0, 0.3);
+      box-shadow: inset 0 1px 4px hsla(0, 0, 0, 0.2);
+
+      &.input-cart-number {
+        width: 82px;
+        display: inline-block;
+        margin-right: 8px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .select {
+      position: relative;
+
+      &::after {
+        content: '';
+        border-top: 8px solid #222;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        position: absolute;
+        z-index: 2;
+        top: 14px;
+        right: 10px;
+        pointer-events: none;
+      }
+
+      select {
+        appearance: none;
+        position: absolute;
+        padding: 0;
+        border: none;
+        width: 100%;
+        outline: none!important;
+        top: 6px;
+        left: 6px;
+        background: none;
+
+        :-moz-focusring {
+          color: transparent;
+          text-shadow: 0 0 0 #000;
+        }
+
+      }
+    }
+
+
+  }
+
+  button {
+    width: 100%;
+    outline: none!important;
+    background: linear-gradient(180deg, #49a09b, #3d8291);
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    box-shadow: none;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    margin-top: 90px;
+
+    & .fa {
+      margin-right: 6px;
+    }
+  }
+
+}
+
+/*--------------------
+Checkout
+--------------------*/
+.checkout {
+  margin: 150px auto 30px;
+  position: relative;
+  width: 460px;
+  background: white;
+  border-radius: 15px;
+  padding: 160px 45px 30px;
+  box-shadow: 0 10px 40px hsla(0, 0, 0, .1);
+}
+
+/*--------------------
+Credit Card
+--------------------*/
+.credit-card-box {
+  perspective: 1000;
+  width: 400px;
+  height: 280px;
+  position: absolute;
+  top: -112px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  &:hover .flip,
+  &.hover .flip {
+    transform: rotateY(180deg);
+  }
+
+  .front,
+  .back {
+    width: 400px;
+    height: 250px;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    background: linear-gradient(135deg, #bd6772, #53223f);
+    position: absolute;
+    color: #fff;
+    font-family: Inconsolata;
+    top: 0;
+    left: 0;
+    text-shadow: 0 1px 1px hsla(0, 0, 0, 0.3);
+    box-shadow: 0 1px 6px hsla(0, 0, 0, 0.3);
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: url('http://cdn.flaticon.com/svg/44/44386.svg') no-repeat center;
+      background-size: cover;
+      opacity: .05;
+    }
+  }
+
+  .flip {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+  }
+
+  .logo {
+    position: absolute;
+    top: 9px;
+    right: 20px;
+    width: 60px;
+
+    svg {
+      width: 100%;
+      height: auto;
+      fill: #fff;
+    }
+  }
+
+  .front {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+
+  .back {
+    transform: rotateY(180deg);
+
+    .logo {
+      top: 185px;
+    }
+
+  }
+
+  .chip {
+    position: absolute;
+    width: 60px;
+    height: 45px;
+    top: 20px;
+    left: 20px;
+    background: linear-gradient(135deg, hsl(269,54%,87%) 0%,hsl(200,64%,89%) 44%,hsl(18,55%,94%) 100%);;
+    border-radius: 8px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      border: 4px solid hsla(0, 0, 50, .1);
+      width: 80%;
+      height: 70%;
+      border-radius: 5px;
+    }
+  }
+
+  .strip {
+    background: linear-gradient(135deg, hsl(0, 0, 25%), hsl(0, 0, 10%));
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    top: 30px;
+    left: 0;
+  }
+
+  .number {
+    position: absolute;
+    margin: 0 auto;
+    top: 103px;
+    left: 19px;
+    font-size: 38px;
+  }
+
+  label {
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-shadow: none;
+    text-transform: uppercase;
+    font-weight: normal;
+    opacity: 0.5;
+    display: block;
+    margin-bottom: 3px;
+  }
+
+  .card-holder,
+  .card-expiration-date {
+    position: absolute;
+    margin: 0 auto;
+    top: 180px;
+    left: 19px;
+    font-size: 22px;
+    text-transform: capitalize;
+  }
+
+  .card-expiration-date {
+    text-align: right;
+    left: auto;
+    right: 20px;
+  }
+
+  .ccv {
+    height: 36px;
+    background: #fff;
+    width: 91%;
+    border-radius: 5px;
+    top: 110px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    margin: 0 auto;
+    color: #000;
+    text-align: right;
+    padding: 10px;
+
+    label {
+      margin: -25px 0 14px;
+      color: #fff;
+    }
+  }
+
+
+}
+
+
+.the-most {
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  width: 50vw;
+  max-width: 200px;
+  padding: 10px;
+  
+  img {
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+

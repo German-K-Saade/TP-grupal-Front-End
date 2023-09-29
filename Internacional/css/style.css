@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/* Globales*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/*---------------------------------------------------------------------------
+                        PAGINA INDEX
+----------------------------------------------------------------------------*/
+
+header{
+  width: 100%;
+  background-color: #494847;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  
+}
+
+.nav-list{
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+
+}
+.nav-list li a:hover{
+  color: #c0f1fa;
+}
+
+.nav-list li a{
+  font-family: "Raleway", sans-serif;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: white;
+}
+
+.logo img{
+  max-width: 5rem;
+}
+
+.logo{
+  display: flex;
+  gap: 1rem;
+}
+
+.logo h2{
+  font-family: 'Pacifico', cursive;
+  font-weight: lighter;
+  font-size: 2rem;
+  color:white;
+  display: flex;
+  align-items: center;
+    
+}
+
+.abrir-menu,
+.cerrar-menu{
+  display: none;
+}
+
+/*---------------NAV-RESPONSIVE--------------*/
+
+@media screen and ( max-width: 768px) {
+  .abrir-menu,
+  .cerrar-menu{
+    display: block;
+    border: 0;
+    font-size: 2rem;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .nav{
+    display: none;
+  }
+
+  .nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgb(10, 9, 9) ;
+    padding: 2rem;
+    box-shadow:0 0 0 100vmax  rgba(66, 66, 64, 0.582);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .nav.visible{
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .nav-list{
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .logo img{
+    max-width: 3rem;
+  }
+  
+  .logo h2{
+    font-size: 1.2rem;
+      
+  }
+
+  header {
+    padding: 0.3rem; 
+}
+}
+
+@media (min-width: 769px) and (max-width: 1080px) {
+  .nav-list li a{
+    font-size: 1rem;
+  }
+
+  .logo img{
+    max-width: 3.5rem;
+  }
+
+  .logo h2{
+    font-size: 1.5rem;     
+  }
+
+  .nav-list{
+    gap: 1rem;
+  
+  }
+
+}
+
+/*------------FOOTER---------*/
+
+footer{
+  background-color: #494847;
+  height: 200px;
+  display: flex;
+  justify-content:right;
+  align-items: center;    
+}
+
+footer img{
+  width: 60px;
+  margin: 15px;   
+}
+
+
+/*---------------------------------------------------------------------------
+                        PAGINA INTERNACIONALES
+----------------------------------------------------------------------------*/
+
+
+
+
+
