@@ -159,7 +159,7 @@ body{
 .banner-nacional{
     height: 400px;
     margin: 5px 0px 5px 0px;
-    background-image: url(/img/chalten1.jpg);
+    background-image: url(../img/chalten1.jpg);
     background-size: cover;
     background-position:center center;
     display: flex;
@@ -169,7 +169,7 @@ body{
 .banner-internacional{
     height: 50vh;
     margin: 5px 0px 5px 0px;
-    background-image:url(/img/roma1.jpg);
+    background-image:url(../img/roma1.jpg);
     background-size: cover;
     background-position:center center;
     display: flex;
