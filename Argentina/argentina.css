@@ -252,8 +252,8 @@ footer img{
 }
 
 .galeria{
-    width: 420px;
-    height: 80px;
+    width: 100vw;
+  height: 80vh;
     margin-left: 5px;
 
 }
