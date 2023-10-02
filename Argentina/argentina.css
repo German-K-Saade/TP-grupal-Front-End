@@ -252,20 +252,20 @@ footer img{
 }
 
 .galeria{
-    width: 100vw;
-  height: 80vh;
-    margin-left: 5px;
+ width: 500vw;
+    height: 480vh;
+    
+
 
 }
 
 .lista-imagenes img { 
-    
-    width: 100%; 
+
+    width: 9vw;
+    height: 20vh;
+    margin-left: 10px;
+    display: block;    
     object-fit: cover;
-    width: 80px;
-    height: 80px;
-    margin-right: 10px;
-    display: block;
 }
  
 
