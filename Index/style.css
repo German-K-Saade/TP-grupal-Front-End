@@ -215,7 +215,8 @@ footer{
     height: 200px;
     display: flex;
     justify-content:right;
-    align-items: center;    
+    align-items: center;
+    
 }
 
 footer img{
@@ -223,6 +224,12 @@ footer img{
     margin: 15px;   
 }
 
+footer p{
+  font-family: "Raleway", sans-serif;
+  font-size: 0.7rem;
+  color: white;
+  
+}
 
 
 
