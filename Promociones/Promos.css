@@ -143,68 +143,6 @@ header{
 
 }
 
-
-/*----------BANNER---------*/
-
-body{
-  font-family: "Raleway", sans-serif;
-  font-weight: 300px;
-  background-color: #aaa4a4;
-
-}
-
-.banner-nacional{
-    height: 400px;
-    margin: 5px 0px 5px 0px;
-    background-image: url(../img/chalten6.jpg);
-    background-size: cover;
-    background-position:center center;
-    display: flex;
-
-}
-
-.banner-internacional{
-    height: 50vh;
-    margin: 5px 0px 5px 0px;
-    background-image:url(../img/roma1.jpg);
-    background-size: cover;
-    background-position:center center;
-    display: flex;
-    
-}
-
-main{
-    width: auto;
-    margin: auto;
-   
-}
-
-.marca{
-    height: 50px;
-    background-color: #494847;   
-}
-
-.marca h1{
-    color: white;
-    display: flex;
-    justify-content:center;
-    align-items: center; 
-}
-
-.banner-nacional a{
-    color: white;
-    font-size: 32px;
-    margin: auto;
-}
-
-.banner-internacional a{
-    color: white;
-    font-size: 32px;
-    margin: auto;
-}
-
-
-
 /*------------FOOTER---------*/
 
 footer{
@@ -234,7 +172,7 @@ body {
 
 /* Contenedor principal */
 .Container {
-  background-image: url("/img/Fondo.jpeg");
+  background-image: url("../img/Fondo.jpeg");
   width: 100%;
   margin: 0 auto;
   padding: 5%;

@@ -252,19 +252,19 @@ footer img{
 }
 
 .galeria{
-    width: 500vw;
-    height: 480vh;
-    
+    width: 420px;
+    height: 80px;
+    margin-left: 5px;
 
 }
 
 .lista-imagenes img { 
     
- 
+    width: 100%; 
     object-fit: cover;
-    width: 9vw;
-    height: 20vh;
-    margin-left: 10px;
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
     display: block;
 }
  
