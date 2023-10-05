@@ -16,7 +16,8 @@
 
 header{
   width: 100%;
-  background-color: #494847;
+  /*background-color: #494847;*/
+  background-color: #006578;
   display:flex;
   align-items: center;
   justify-content: space-between;
@@ -152,13 +153,12 @@ header{
 body{
   font-family: "Raleway", sans-serif;
   font-weight: 300px;
-  background-color: #aaa4a4;
 
 }
 
 .banner-nacional{
     height: 400px;
-    margin: 5px 0px 5px 0px;
+    margin: 1px 0px 1px 0px;
     background-image: url(../img/chalten1.jpg);
     background-size: cover;
     background-position:center center;
@@ -168,7 +168,7 @@ body{
 
 .banner-internacional{
     height: 50vh;
-    margin: 5px 0px 5px 0px;
+    margin: 1px 0px 1px 0px;
     background-image:url(../img/roma1.jpg);
     background-size: cover;
     background-position:center center;
@@ -211,16 +211,22 @@ main{
 /*------------FOOTER---------*/
 
 footer{  
-    background-color: #494847;
+    background-color: #006578;
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;  
+    align-items: center;
+}
+
+.info{
+  font-size: 1rem;
+  text-align: center;
+  display:flex;
+  align-items: flex-end;
 }
 
 .tarjetas{
   width: 100%;
-  background-color:black;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -229,18 +235,22 @@ footer{
 }
 
 .tarjetas img{
-  max-width: 3.2rem;
+  max-width: 3rem;
 }
 
 .redes{
-  display: flex;
-  gap: 2rem;
-  padding: 3rem;
-  
+  text-align: center;
+
+   
+}
+
+.redes p{
+  font-size: 1rem;  
 }
 
 .redes img{
-  max-width: 3rem;
+  max-width: 2rem;
+  margin: 0.7rem;
 }
 
 
