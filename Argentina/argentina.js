@@ -27,7 +27,7 @@ function moveToRight() {
     counter++;
     operacion = operacion + widthImg;
     slider.style.transform = `translate(-${operacion}%)`;
-    slider.style.transition = "all ease .6s"
+    slider.style.transition =   "slide 5s ease-in-out"
     
 }  
 
@@ -42,7 +42,7 @@ function moveToLeft() {
     } 
     operacion = operacion - widthImg;
     slider.style.transform = `translate(-${operacion}%)`;
-    slider.style.transition = "all ease .6s"
+    slider.style.transition = "slide 5s ease-in-out"
     
     
 }   
