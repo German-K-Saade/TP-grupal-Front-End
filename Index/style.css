@@ -16,7 +16,6 @@
 
 header{
   width: 100%;
-  /*background-color: #494847;*/
   background-color: #006578;
   display:flex;
   align-items: center;
@@ -121,25 +120,6 @@ header{
 
   header {
     padding: 0.3rem; 
-}
-}
-
-@media (min-width: 769px) and (max-width: 1080px) {
-  .nav-list li a{
-    font-size: 1rem;
-  }
-
-  .logo img{
-    max-width: 3.5rem;
-  }
-
-  .logo h2{
-    font-size: 1.5rem;     
-  }
-
-  .nav-list{
-    gap: 1rem;
-  
   }
 
 }
@@ -206,8 +186,6 @@ main{
     margin: auto;
 }
 
-
-
 /*------------FOOTER---------*/
 
 footer{
@@ -248,15 +226,44 @@ footer u{
 }
 
 .info{
-  text-align: center;
   display:flex;
   align-items: flex-end;
+  text-align: center;
   gap: 5rem;
   margin-bottom: 1rem;
+}
+.info p{
+  font-family:"Raleway", sans-serif;
+  font-size: 1rem;
+  color: #ffffff;
 }
 .info u{
   font-size: 1.5rem;
   font-weight: bold;
+  color: #ffffff;
+}
+
+@media screen and ( max-width: 768px){
+  footer u{
+    font-size:0.5rem;
+  }
+  .tarjetas{
+    display: none;
+  }
+  .redes img{
+    width: 1.5rem;
+    margin: 0.5rem;
+  }
+  .info p{
+    display: none;
+  }
+  .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
 }
 
 
