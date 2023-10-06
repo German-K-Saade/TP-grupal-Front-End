@@ -210,19 +210,19 @@ main{
 
 /*------------FOOTER---------*/
 
-footer{  
-    background-color: #006578;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+footer{
+  background-color: #006578;
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  color: #ffffff;
 }
 
-.info{
-  font-size: 1rem;
-  text-align: center;
-  display:flex;
-  align-items: flex-end;
+footer u{
+  font-size: 1rem ;
+  padding: 0.5rem;  
 }
 
 .tarjetas{
@@ -231,7 +231,6 @@ footer{
   align-items: center;
   justify-content: space-around;
   padding: 0.5rem;  
-
 }
 
 .tarjetas img{
@@ -239,13 +238,8 @@ footer{
 }
 
 .redes{
-  text-align: center;
-
-   
-}
-
-.redes p{
-  font-size: 1rem;  
+  font-size: 1.2rem;
+  font-weight: bold;  
 }
 
 .redes img{
@@ -253,14 +247,18 @@ footer{
   margin: 0.7rem;
 }
 
-
-footer p{
-  font-family: "Raleway", sans-serif;
-  font-size: 1rem;
-  color: white;
-  padding: 0.5rem;
-  
+.info{
+  text-align: center;
+  display:flex;
+  align-items: flex-end;
+  gap: 5rem;
+  margin-bottom: 1rem;
 }
+.info u{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 
 
 
