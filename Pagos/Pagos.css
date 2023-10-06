@@ -16,7 +16,7 @@
 
 header{
   width: 100%;
-  background-color: #494847;
+  background-color:#006578;
   display:flex;
   align-items: center;
   justify-content: space-between;
@@ -120,7 +120,9 @@ header{
 
   header {
     padding: 0.3rem; 
-}
+  }
+  
+
 }
 
 @media (min-width: 769px) and (max-width: 1080px) {
@@ -143,34 +145,96 @@ header{
 
 }
 
-
-
 /*------------FOOTER---------*/
 
 footer{
-    background-color: #494847;
-    height: 200px;
+  background-color: #006578;
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  color: #ffffff;
+}
+
+footer u{
+  font-size: 1rem ;
+  padding: 0.5rem;  
+}
+
+.tarjetas{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.5rem;  
+}
+
+.tarjetas img{
+  max-width: 3rem;
+}
+
+.redes{
+  font-size: 1.2rem;
+  font-weight: bold;  
+}
+
+.redes img{
+  max-width: 2rem;
+  margin: 0.7rem;
+}
+
+.info{
+  display:flex;
+  align-items: flex-end;
+  text-align: center;
+  gap: 5rem;
+  margin-bottom: 1rem;
+}
+.info p{
+  font-family:"Raleway", sans-serif;
+  font-size: 1rem;
+  color: #ffffff;
+}
+.info u{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+@media screen and ( max-width: 768px){
+  footer u{
+    font-size:0.5rem;
+  }
+  .tarjetas{
+    display: none;
+  }
+  .redes img{
+    width: 1.5rem;
+    margin: 0.5rem;
+  }
+  .info p{
+    display: none;
+  }
+  .info{
     display: flex;
-    justify-content:right;
-    align-items: center;    
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
 }
-
-footer img{
-    width: 60px;
-    margin: 15px;   
-}
-
 
 /*---------------------------------------------------------------------------
                         PAGINA PROMOCIONES
 ----------------------------------------------------------------------------*/
 /* Estilos generales */
-body {
+/*body {
   font-family: Arial, sans-serif;
   font-size: 20px;
   line-height: 1.5;
   color: black;
-}
+}*/
 
 /* Contenedor principal */
 .Container {
