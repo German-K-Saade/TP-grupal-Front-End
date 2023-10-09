@@ -25,11 +25,11 @@ header{
 }
 
 .nav-list{
-  list-style-type: none;
   display: flex;
   gap: 2rem;
-
+  list-style-type: none;
 }
+
 .nav-list li a:hover{
   color: #c0f1fa;
 }
@@ -227,7 +227,15 @@ footer u{
                         PAGINA INTERNACIONALES
 ----------------------------------------------------------------------------*/
 
-
-
+section{
+  font-family:"Raleway", sans-serif;
+  font-size: 1rem;
+}
+.destinos{
+  display: flex;
+}
+.destinos img{
+  width: 40%;
+}
 
 
