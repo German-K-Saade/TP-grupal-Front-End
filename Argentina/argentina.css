@@ -25,11 +25,11 @@ header{
 }
 
 .nav-list{
-  list-style-type: none;
   display: flex;
   gap: 2rem;
-
+  list-style-type: none;
 }
+
 .nav-list li a:hover{
   color: #c0f1fa;
 }
@@ -223,186 +223,49 @@ footer u{
   
 }
 
-/***************************************************************************************************************************************************************************
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-***************************************************************************************************************************************************************************/
-
-
 /*---------------------------------------------------------------------------
                         PAGINA ARGENTINA
 ----------------------------------------------------------------------------*/
-
-.title {
-
-    text-align: center;
+.paquetes{
+  background-image:url(../img/Fondo.jpeg);
+  width: 100%;
+  padding: 1rem;
+  font-family:"Raleway", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-
-.container{
-
-    width: 100%;
-    height: 100%;
-    justify-content: space-evenly;
-    left: 10%;
-      
+.paquetes h2{
+  background-color: #ffffff;
+  color: #006578;
+  font-size: clamp(1em, 5vw, 2em);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #006578 ;
+  margin-bottom: 1rem;
+ 
 }
-    
-    
-.caja1{
-  width: 80vw;
-  height: 100vh;
-  padding: 10px;
-  text-align: center;
-  margin-bottom: 5px;
-  margin-left: 10%;
-  background-color:rgba(237, 247, 185, 0.747)
-    
-     
-
-}
-
-.caja2{
-  width: 80vw;
-  height: 100vh;
-  padding: 10px;
-  text-align: center;
-  margin-bottom: 5px;
-  margin-left: 10%;
-  background-color:rgba(237, 247, 185, 0.747)
-     
-    
-}
-
-.caja3{
-
-  width: 80vw;
-  height: 100vh;
-  padding: 10px;
-  text-align: center;
-  margin-bottom: 5px;
-  margin-left: 10%;
-  background-color:rgba(237, 247, 185, 0.747)
-     
-}
-
-.caja4{
-  width: 80vw;
-  height: 100vh;
-  padding: 10px;
-  text-align: center;
-  margin-bottom: 5px;
-  margin-left: 10%;
-  background-color:rgba(237, 247, 185, 0.747)
-     
-}
-
-.caja5{
-  width: 80vw;
-  height: 100vh;
-  padding: 10px;
-  text-align: center;
-  margin-bottom: 5px;
-  margin-left: 10%;
-  background-color:rgba(237, 247, 185, 0.747)
-}
-
-.caja6{
-  width: 80vw;
-  height: 100vh;
-  padding: 10px;
-  text-align: center;
-  margin-bottom: 5px;
-  margin-left: 10%;
-  background-color:rgba(237, 247, 185, 0.747)
-}
-
-.container-carousel {
-  position: relative;
-  width: 550px;
-  height: 350px;
-  margin-left: 19%;
-  border-radius: 15px;
-  overflow: hidden;
-
-}
-
-.carruseles {
-  width: 1000%;
-  height: 100%;
-  display: flex; 
-
-}
-
-.slider-section {
-  width: calc(100% / 10);
-  height: 100%;
-}
-
-.slider-section img {
+.destinos{
+  background-color:#b8edf8 ;
+  padding: 2rem;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  border-radius: 15px;
-}
-
-.btn-left,
-.btn-right {
+  margin-bottom: 1rem;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.438);
+  border-radius: 1rem;
+  font-size: 1rem;
   display: flex;
-  position: absolute;
-  top: 50%;
-  font-size: 1.5rem;
-  background-color: transparent;
-  border-radius: 50%;
-  padding: 5px;
-  font-weight: 600;
-  cursor: pointer;
-  color: #ffffff81;
-  transform: translate(0,-50%);
-  user-select: none;
+  justify-content: space-between;
+  font-size:calc(.5em + .7em);
 }
 
-.btn-left:hover,
-.btn-right:hover {
-  background-color: #333333d4;
-  color: #fff;
-}
-
-.btn-left {
-  left: 10px;
-}
-
-.btn-right {
-  right: 10px;
-}
-/*
-.galeria{
-    width: 420px;
-    height: 80px;
-    margin-left: 5px;
-
-}
-
-.lista-imagenes img { 
-      object-fit: cover;
-    width: 80px;
-    height: 80px;
-    margin-right: 10px;
-    display: block;
-}
- 
-
-.lista-imagenes{
-    
-  display: flex;
-  overflow-y: auto;
-
-}
 
 .slider-frame{
-    width:65%;
-    height: 65%;
+    width: 500px;
+    height:300px;
     margin: 50px, auto, 0;
-    margin-left: 18%;
+    margin-left: 1%;
     overflow: hidden;
 
 }
@@ -411,20 +274,20 @@ footer u{
     display: flex;
     padding: 0;
     width: 400%;      /* me modifico como se ven las imagenes*/
-/*
-    animation: slide 5s ease-in-out infinite;
+ animation: slide 8s ease-in-out infinite;
 }
 
 
 .slider-frame li{
     list-style: none;
-    width: 80vw;
+    width: 90vw;
     height: 90vh;
 }
 
 .slider-frame img{
     width: 100%;
 }
+
 
 @keyframes slide{
 
@@ -442,7 +305,7 @@ footer u{
 
 }
 
-
+/*
 .carrousel{
     width: 230px;
     height: 130px;
@@ -468,8 +331,8 @@ footer u{
   height: 150px;
   overflow: hidden;
   }
-
-
+*/
+/*
 .imagen{
   width: 230px;
   height: 150px;
@@ -480,15 +343,14 @@ footer u{
 }
 
 
-/*.itemCarrousel{
+.itemCarrousel{
   padding: 0;
   width: 400%;
   overflow: hidden;
   animation: slide 5s ease-in-out infinite;
 
 }
-*/
-/*
+
 .conteCarrouselController{
     width: 50%;
     justify-content: space-evenly;
@@ -500,8 +362,7 @@ footer u{
     font-size: 2em;
     color: grey;
    
-}
-*/
+}*/
 
 
 
