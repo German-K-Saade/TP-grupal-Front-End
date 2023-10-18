@@ -234,30 +234,28 @@ footer u{
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1.5em;
 }
 
 .paquetes h2{
   background-color: #ffffff;
   color: #006578;
-  font-size: clamp(1em, 5vw, 2em);
-  padding: 1rem;
+  font-size: clamp(1rem, 3vw, 2rem);
+  padding: .5em;
   border-radius: 0.5rem;
   border: 1px solid #006578 ;
-  margin-bottom: 1rem;
  
 }
 .destinos{
   background-color:#b8edf8 ;
-  padding: 2rem;
   width: 100%;
   height: 100%;
-  margin-bottom: 1rem;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.438);
   border-radius: 1rem;
-  font-size: 1rem;
   display: flex;
   justify-content: space-between;
-  font-size:calc(.5em + .7em);
+  padding: 1.5em ;  
+  gap: 1em;
 }
 
 
