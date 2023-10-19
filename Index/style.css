@@ -124,83 +124,81 @@ header{
 
 }
 
+@media (min-width: 769px) and (max-width: 1080px) {
+  .nav-list li a{
+    font-size: 1rem;
+  }
+
+  .logo img{
+    max-width: 3.5rem;
+  }
+
+  .logo h2{
+    font-size: 1.5rem;     
+  }
+
+  .nav-list{
+    gap: 1rem;
+  
+  }
+
+}
 
 
 
 
-/*----------BANNER---------*/
+/*----------PRINCIPAL INDEX---------*/
 
 body{
+  background-image: url(../img/Fondo.jpeg);
+  width: 100%;
   font-family: "Raleway", sans-serif;
   font-weight: 300px;
+  background-size: auto;
+}
+
+.principal{
+  padding:1em ;
+  display: flex;
+  flex-direction: column;
+ align-items: center;
 
 }
 
-.banner-nacional{
-    height: 400px;
-    margin: 1px 0px 1px 0px;
-    background-image: url(../img/chalten1.jpg);
-    background-size: cover;
-    background-position:center center;
-    display: flex;
 
+.banner{
+  width: 75vw;
+  
 }
 
-.banner-internacional{
-    height: 50vh;
-    margin: 1px 0px 1px 0px;
-    background-image:url(../img/roma1.jpg);
-    background-size: cover;
-    background-position:center center;
-    display: flex;
-    
+.banner img{
+  width: 100%;
+  height: 100%;
+  border-radius: 1em;
 }
 
-main{
-    width: auto;
-    margin: auto;
-   
-}
 
 .marca{
-    height: 7%;
-    background-color: #494847;   
+  font-family: 'Pacifico', cursive;
+  font-size: 1.5rem;
+  color: #006578;
+  
 }
 
-.marca h1{
-    color: white;
-    display: flex;
-    justify-content:center;
-    align-items: center; 
-}
+  
 
-.banner-nacional a{
-    color: white;
-    font-size: 32px;
-    margin: auto;
-}
 
-.banner-internacional a{
-    color: white;
-    font-size: 32px;
-    margin: auto;
-}
 
 /*------------FOOTER---------*/
 
 footer{
   background-color: #006578;
   width: 100%;
-  display:flex;
-  flex-direction: column;
-  align-items: center;
   font-family: "Raleway", sans-serif;
   color: #ffffff;
-}
-
-footer u{
-  font-size: 1rem ;
-  padding: 0.5rem;  
+  font-size: 1rem;
+  text-align: center;
+  padding: .3em;
 }
 
 .tarjetas{
@@ -208,7 +206,7 @@ footer u{
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 0.5rem;  
+  padding: 1em;  
 }
 
 .tarjetas img{
@@ -222,37 +220,40 @@ footer u{
 
 .redes img{
   max-width: 2rem;
-  margin: 0.7rem;
+  margin: 1em;
 }
 
 .info{
   display:flex;
   align-items: flex-end;
   text-align: center;
-  gap: 5rem;
-  margin-bottom: 1rem;
+  justify-content:space-around;
+  margin-bottom: 0.5em;
 }
-.info p{
-  font-family:"Raleway", sans-serif;
-  font-size: 1rem;
+
+.direccion i,
+.atencion i{
+  font-size: 2rem;
+  margin: .4em;
+}
+
+.info u,
+.direccion a{
   color: #ffffff;
-}
-.info u{
   font-size: 1.5rem;
   font-weight: bold;
-  color: #ffffff;
 }
 
 @media screen and ( max-width: 768px){
-  footer u{
-    font-size:0.5rem;
+  footer {
+    font-size:.7rem;
   }
   .tarjetas{
     display: none;
   }
   .redes img{
     width: 1.5rem;
-    margin: 0.5rem;
+    margin: .5em;
   }
   .info p{
     display: none;
@@ -261,11 +262,43 @@ footer u{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.5rem;
   }
-  
+  .direccion{
+    margin-top:0.5em;
+  }
+  .info u,
+  .direccion a{
+  font-size: 1rem;
+  }
+  .direccion i,
+  .atencion i{
+  font-size: 1.5rem;
+  margin: .2em;
+  } 
 }
 
+@media (min-width: 769px) and (max-width: 1080px){
+  footer{
+    font-size: 0.7rem;
+  }
+  .direccion i,
+  .atencion i{
+  font-size: 1.7rem;
+  margin: .4em;
+  }
+  .info u,
+  .direccion a{
+  font-size: 1.2rem;
+  }
+  .redes img{
+    width: 1.7rem;
+    margin: .4em;
+  }
+  .redes{
+    font-size: 1rem;  
+  }
+
+}
 
 
 
