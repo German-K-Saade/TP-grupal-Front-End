@@ -226,7 +226,111 @@ footer u{
 /*---------------------------------------------------------------------------
                         PAGINA ARGENTINA
 ----------------------------------------------------------------------------*/
+
 .paquetes{
+  background-image:url(../img/Fondo.jpeg);
+  width: 100%;
+  padding: 1.5em;
+  font-family:"Raleway", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.paquetes h2{
+  background-color: #ffffff;
+  color: #006578;
+  font-size: clamp(1rem, 3vw, 2rem);
+  padding: 0.5em;
+  border-radius: 0.5em;
+  border: 1px solid #006578 ; 
+ 
+}
+.destinos{
+  background-color:#b8edf8 ;
+  width: 100%;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.438);
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5em ;  
+  gap: 1em;
+
+}
+
+.slider-frame{
+  width: 40vw;
+  height: auto;
+  overflow: hidden;
+  
+}
+
+.slider-frame ul{
+  display: flex;
+  width: 600%;
+  animation: slide 10s ease-in-out infinite;
+
+}
+
+.slider-frame li{
+  list-style: none;
+  width: 100%;
+}
+
+.slider-frame img{
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+
+@keyframes slide{
+
+0% {margin-left: 0%;} 
+16% {margin-left: 0%;}
+  
+17% {margin-left: -100%;}
+32% {margin-left: -100%;}
+  
+33% {margin-left: -200%;} 
+48% {margin-left: -200%;}
+  
+49% {margin-left: -300%;} 
+64% {margin-left: -300%;}
+
+65% {margin-left: -400%;} 
+80% {margin-left: -400%;}
+  
+81% {margin-left: -500%;} 
+97% {margin-left: -500%;}
+  
+}
+
+.tour{
+  font-size: clamp(.8rem, 2vw, 1.5rem);
+  line-height: 1.2;
+  width: 45vw;
+  
+  
+}
+
+.tour li{
+  margin-left: 1em;
+}
+
+
+@media screen and ( max-width: 768px){
+  .destinos{
+    flex-direction: column;
+    align-items: center;
+  }
+  .tour,
+  .slider-frame{
+    width: auto;
+  }
+}
+
+/*.paquetes{
   background-image:url(../img/Fondo.jpeg);
   width: 100%;
   padding: 1rem;
@@ -246,7 +350,7 @@ footer u{
   margin-bottom: 1rem;
  
 }
-.destinos{
+.destinos {
   background-color:#b8edf8 ;
   padding: 2rem;
   width: 100%;
@@ -260,7 +364,19 @@ footer u{
   font-size:calc(.5em + .7em);
 }
 
-
+.paquetes h4{
+  background-color: #ffffff;
+  color: #006578;
+  font-size: clamp(1em, 5vw, 2em);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #006578 ;
+  margin-bottom: 1rem;
+ 
+}
+.paquetes h4 :hover {
+ background-color: #006578;
+}
 .slider-frame{
     width: 500px;
     height:300px;
@@ -274,9 +390,10 @@ footer u{
     display: flex;
     padding: 0;
     width: 400%;      /* me modifico como se ven las imagenes*/
-    animation: slide 8s ease-in-out infinite;
+  /*  animation: slide 8s ease-in-out infinite;
   
 }
+
 
 
 .slider-frame li{
@@ -305,7 +422,7 @@ footer u{
 95% {margin-left: -300%;}
 
 }
-
+*/
 /*
 .carrousel{
     width: 230px;
@@ -368,5 +485,30 @@ footer u{
 
 
 
+/*
 
 
+.tour{
+  font-size: clamp(.8rem, 2vw, 1.5rem);
+  line-height: 1.2;
+  width: 45vw;
+  
+  
+}
+
+.tour li{
+  margin-left: 1em;
+}
+
+
+@media screen and ( max-width: 768px){
+  .destinos{
+    flex-direction: column;
+    align-items: center;
+  }
+  .tour,
+  .slider-frame{
+    width: auto;
+  }
+}
+*/
