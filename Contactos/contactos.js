@@ -2,9 +2,10 @@
 function validarFormulario() 
 {   
 
-    valor = document.getElementById('nombre').value.trim();
+    var nombre = document.getElementById('nombre').value.trim();  
+    var mensaje  = document.getElementById('mensaje').value.trim();
     
-if(valor == null || valor.length == 0) 
+if(nombre.value === null || valor.length === 0) 
 {
     
     document.getElementById('msjnombre').innerHTML = "Ingresá tu nombre";
@@ -14,11 +15,8 @@ if(valor == null || valor.length == 0)
     return false;
 }       
 
-valor = document.getElementById('mensaje').value.trim();
-
-if (valor == null || valor.length == 0)
+elseif (mensaje.value === null || valor.length === 0)
 {
-
 
 document.getElementById("msj").innerHTML = "Debes escribir un mensaje";
 elemento = document.getElementById('mensaje');
