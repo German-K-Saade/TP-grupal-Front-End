@@ -334,6 +334,7 @@ input[type="submit"] {
     transition: background-color 0.3s;
 }
 
+
 /* Cambia el color del botón cuando se pasa el mouse sobre él */
 input[type="submit"]:hover {
     background-color: #3800d0;
