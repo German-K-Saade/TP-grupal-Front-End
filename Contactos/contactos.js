@@ -3,7 +3,7 @@ function validarFormulario()
     var nombre = document.getElementById('nombre').value.trim();
     var mensaje = document.getElementById('mensaje').value.trim();
     var email = document.getElementById('email').value.trim();
-    var telefono = document.getElementById('telefono').value.trim();
+    var telefono = document.getElementById('telefono').value.trim();;
 
     if(nombre == null || nombre.length == 0) 
 {
@@ -23,10 +23,12 @@ else if(!(/^\w+([\.-]?\w+)*@(?:|hotmail|outlook|yahoo|live|gmail|edu)\.(?:|com|a
 
 }
 
-else if (telefono > 10 || telefono == null){
-document.getElementById('msjtel').innerHTML = "No es un número de teléfono correcto";
+else if(telefono > 10 || telefono == null){
+document.getElementById("msjtel").innerHTML = "No es un número de teléfono correcto";
     elemento = document.getElementById('telefono');
+
 return false
+
 }
 
 else if(mensaje == null || mensaje.length == 0)
