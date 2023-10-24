@@ -355,7 +355,8 @@ body {
   }
 
   .Container section {
-      width: 100%;
+      width: 150vw;
+      padding: 5px;
+      margin-bottom: 5px;
+      font-size: 55%;
   }
-}
-
