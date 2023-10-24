@@ -165,7 +165,7 @@ header{
 
 .bt-mundo{
   font-family: 'Paytone One', sans-serif;
-  font-size: clamp(1rem, 2vw, 2rem);
+  font-size: clamp(0.6rem, 2vw, 2rem);
   color: #ffffff;
   background-color: #006578;  
   padding: 1em;
@@ -180,7 +180,7 @@ header{
 
 .bt-argentina{
   font-family: 'Paytone One', sans-serif;
-  font-size: clamp(1rem, 2vw, 2rem);
+  font-size: clamp(0.6rem, 2vw, 2rem);
   color: #ffffff;
   background-color: #006578;  
   padding: 1em;
