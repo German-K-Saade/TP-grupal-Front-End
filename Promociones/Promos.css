@@ -280,8 +280,7 @@ body {
 /* Contenedor de las cartas */
 .card-container {
   width: 190px;
-  height: 254px;
-  background: transparent;
+  height: 100;
   position: relative;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.438);
   overflow: hidden;
@@ -292,24 +291,25 @@ body {
 .Container section {
   cursor: default;
   width: 600px;
-  height: 700px;
+  height: 90vh;
   position: relative;
   z-index: 2;
-  margin-bottom: 5px; /* Espacio entre las tarjetas */
+  margin-bottom: 10px; /* Espacio entre las tarjetas */
   display: flex;
   flex-direction: column; /* Cambiamos la dirección a columna para el contenido */
   align-items: center;
   justify-content: center;
-  font-size: 18px; /* Tamaño de fuente reducido */
+  font-size: clamp(1rem, 1vw, 7rem); /* Tamaño de fuente reducido */
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #212121;
-  background-color: rgba(255, 255, 255, 0.074);
+  background-color:#b8edf8 ;
+  color: #006578;
   border: 1px solid rgba(255, 255, 255, 0.222);
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   border-radius: 10px;
   transition: all ease 0.3s;
+
 }
 
 /* Efecto al pasar el mouse sobre las secciones */
@@ -352,10 +352,13 @@ body {
   .Container {
       width: 100%;
       padding: 0 10px;
+    
   }
 
   .Container section {
       width: 100%;
+      display: block;
+     
   }
 }
 
