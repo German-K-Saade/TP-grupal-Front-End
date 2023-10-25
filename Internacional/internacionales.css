@@ -263,7 +263,6 @@ footer{
 ----------------------------------------------------------------------------*/
 .paquetes{
   background-image:url(../img/Fondo.jpeg);
-  z-index: -2;
   width: 100%;
   padding: 1.5em;
   font-family:"Raleway", sans-serif;
@@ -284,7 +283,6 @@ footer{
 }
 .destinos{
   background-color:#b8edf8 ;
-  z-index: -1;
   width: 100%;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.438);
   border-radius: 1em;
