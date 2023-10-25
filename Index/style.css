@@ -104,6 +104,7 @@ header{
   .nav.visible{
     opacity: 1;
     visibility: visible;
+    z-index: 2;
   }
   
   .nav-list{
@@ -154,35 +155,58 @@ header{
 .principal{
   background-image: url(../img/fondo\ promos.jfif);
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2rem;
-  gap: 2rem ;
-
+  padding: 2em;
 }
 
-.secundario{
-  display: flex;
+.mundo{
+  display:flex;
   align-items: center;
+  justify-content: space-evenly;
 }
 
-.secundario h2{
+.bt-mundo{
   font-family: 'Paytone One', sans-serif;
-  font-size: 3rem;
+  font-size: clamp(0.6rem, 2vw, 2rem);
+  color: #ffffff;
+  background-color: #006578;  
+  padding: 1em;
+  border-radius: 10px;
+}
+
+.argentina{
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.bt-argentina{
+  font-family: 'Paytone One', sans-serif;
+  font-size: clamp(0.6rem, 2vw, 2rem);
+  color: #ffffff;
+  background-color: #006578;  
+  padding: 1em;
+  border-radius: 10px;
+}
+
+.bt-argentina:hover,
+.bt-mundo:hover {
+  color: #c0f1fa;
+  border-bottom: #c0f1fa 20px solid;
+  border-top: #c0f1fa 20px solid; ;
 }
 
 .marca{
   font-family: 'Paytone One', sans-serif;
-  font-size: 2rem;
-  color: #006578;
-  background-color:#ffffff;
-  padding: 0.5rem;
+  font-size: clamp(.5rem, 2vw, 2rem);
+  color: #ffffff;
+  background-color:#006578;
+  padding: .5em;
+  text-align: center;
+  margin: 1em -2em;
 }
 
 .slider-banner{
-  width: 65vw;
-  height: 80vh;
+  width: 50%;
   overflow: hidden;
   border-radius: 1rem;
 }
@@ -206,46 +230,6 @@ header{
 }
 
 
-/*@keyframes slide{
-
-0% {margin-left: 0%;} 
-8% {margin-left: 0%;}
-  
-9% {margin-left: -100%;}
-16% {margin-left: -100%;}
-  
-17% {margin-left: -200%;} 
-24% {margin-left: -200%;}
-  
-25% {margin-left: -300%;} 
-32% {margin-left: -300%;}
-
-33% {margin-left: -400%;} 
-40% {margin-left: -400%;}
-  
-41% {margin-left: -500%;} 
-48% {margin-left: -500%;}
-
-49% {margin-left: -600%;} 
-57% {margin-left: -600%;}
-  
-58% {margin-left: -700%;}
-65% {margin-left: -700%;}
-  
-66% {margin-left: -800%;} 
-74% {margin-left: -800%;}
-  
-75% {margin-left: -900%;} 
-83% {margin-left: -900%;}
-
-84% {margin-left: -1000%;} 
-91% {margin-left: -1000%;}
-  
-92% {margin-left: -1100%;} 
-100% {margin-left: -1100%;}
-
-}*/
-
 @keyframes slide{
 
   0% {margin-left: 0%;} 
@@ -268,8 +252,22 @@ header{
 
 }
 
-
-
+@media screen and ( max-width: 768px){
+  .mundo,
+  .argentina{
+    flex-direction: column-reverse;
+    gap: 0.5em; 
+  }
+  .principal{
+    padding: .5em;
+  }
+  .marca{
+    margin: .5em -1em;
+  }
+  .slider-banner{
+    width: 80%;
+  }
+}
 
 /*------------FOOTER---------*/
 

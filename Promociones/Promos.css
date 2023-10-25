@@ -101,6 +101,7 @@ header{
   .nav.visible{
     opacity: 1;
     visibility: visible;
+    z-index: 2;
   }
   
   .nav-list{
@@ -291,10 +292,9 @@ body {
 .Container section {
   cursor: default;
   width: 600px;
-  height: 90vh;
+  height: 700px;
   position: relative;
-  z-index: 2;
-  margin-bottom: 10px; /* Espacio entre las tarjetas */
+  margin-bottom: 5px; /* Espacio entre las tarjetas */
   display: flex;
   flex-direction: column; /* Cambiamos la dirección a columna para el contenido */
   align-items: center;
@@ -356,9 +356,24 @@ body {
   }
 
   .Container section {
-      width: 100%;
-      display: block;
-     
+      height: 40%;
+      padding: 10px;
+      margin-bottom: 5px;
+      font-size: 80%;
+  }
+
+  .Container section p2 {
+    font-size: 120%;
+
+
+  }
+
+  .Container section p {
+    font-size: 120%;
+  }
+  
+
+  .Container section h1 {
+    font-size: 120%;
   }
 }
-
