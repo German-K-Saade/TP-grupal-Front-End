@@ -352,11 +352,29 @@ cursor: default;
   .Container {
       width: 100%;
       padding: 0 10px;
+    
   }
 
   .Container section {
-      width: 150vw;
-      padding: 5px;
+      height: 40%;
+      padding: 10px;
       margin-bottom: 5px;
-      font-size: 55%;
+      font-size: 80%;
   }
+
+  .Container section p2 {
+    font-size: 120%;
+
+
+  }
+
+  .Container section p {
+    font-size: 120%;
+  }
+  
+
+  .Container section h1 {
+    font-size: 120%;
+  }
+}
+
