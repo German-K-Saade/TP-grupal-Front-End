@@ -25,11 +25,11 @@ header{
 }
 
 .nav-list{
+  list-style-type: none;
   display: flex;
   gap: 2rem;
-  list-style-type: none;
-}
 
+}
 .nav-list li a:hover{
   color: #c0f1fa;
 }
@@ -122,6 +122,8 @@ header{
   header {
     padding: 0.3rem; 
   }
+  
+
 }
 
 @media (min-width: 769px) and (max-width: 1080px) {
