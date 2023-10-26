@@ -98,7 +98,7 @@ header{
     visibility: hidden;
   }
 
-  .nav.visible{
+   .nav.visible{
     opacity: 1;
     visibility: visible;
     z-index: 2;
