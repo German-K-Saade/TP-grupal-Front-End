@@ -292,21 +292,19 @@ body {
 .Container section {
   cursor: default;
   width: 600px;
-  height: 700px;
+  height: 30rem;
   position: relative;
-  margin-bottom: 5px; /* Espacio entre las tarjetas */
+  margin-top: 10px; /* Espacio entre las tarjetas */
   display: flex;
   flex-direction: column; /* Cambiamos la dirección a columna para el contenido */
   align-items: center;
   justify-content: center;
-  font-size: clamp(1rem, 1vw, 7rem); /* Tamaño de fuente reducido */
+  font-size: 72%; /* Tamaño de fuente reducido */
   text-transform: uppercase;
   letter-spacing: 2px;
   background-color:#b8edf8 ;
   color: #006578;
   border: 1px solid rgba(255, 255, 255, 0.222);
-  -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
   border-radius: 10px;
   transition: all ease 0.3s;
 
@@ -349,18 +347,21 @@ body {
 
 /* Estilos para pantallas pequeñas (máximo 768px de ancho) */
 @media (max-width: 768px) {
-  .Container {
-      width: 100%;
-      padding: 0 10px;
-    
-  }
 
+  .Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
   .Container section {
       height: 40%;
       padding: 10px;
-      margin-bottom: 5px;
+      margin-top: 15px;
       font-size: 80%;
-  }
+      
+
+      }
 
   .Container section p2 {
     font-size: 120%;
