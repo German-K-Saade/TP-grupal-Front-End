@@ -346,7 +346,7 @@ body {
 }
 
 /* Estilos para pantallas pequeñas (máximo 768px de ancho) */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
   .Container{
     display: flex;
