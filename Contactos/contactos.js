@@ -10,22 +10,26 @@ function validarFormulario()
     
     document.getElementById('msjnombre').innerHTML = "Ingrese su nombre";
     elemento = document.getElementById('nombre');
-   
+    elemento.focus();
+
     return false;
+    
 }   
 
 
 else if(!(/^\w+([\.-]?\w+)*@(?:|hotmail|outlook|yahoo|live|gmail|edu)\.(?:|com|ar)+$/.test(email))){
     document.getElementById('msjemail').innerHTML = "No es una dirección de email correcta";
     elemento = document.getElementById('email');
+    elemento.focus();
     
     return false
 
 }
 
-else if(telefono > 10 || telefono == null){
-document.getElementById("msjtel").innerHTML = "No es un número de teléfono correcto";
+else if(telefono < 10 || telefono == null){
+    document.getElementById("msjtel").innerHTML = "No es un número de teléfono correcto";
     elemento = document.getElementById('telefono');
+    elemento.focus();
 
 return false
 
@@ -36,10 +40,12 @@ else if(mensaje == null || mensaje.length == 0)
 
 document.getElementById('msj').innerHTML = "Debes escribir un mensaje";
 elemento = document.getElementById('mensaje');
+elemento.focus();
 
 return false;
 
 }
-return true
+
+return true;
 
 }
