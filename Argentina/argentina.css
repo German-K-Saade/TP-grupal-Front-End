@@ -200,6 +200,14 @@ footer{
   font-weight: bold;
 }
 
+.direccion a:hover{
+  color: #c0f1fa;
+}
+
+.redes img:hover{
+  scale: 1.1;
+}
+
 @media screen and ( max-width: 768px){
   footer {
     font-size:.7rem;

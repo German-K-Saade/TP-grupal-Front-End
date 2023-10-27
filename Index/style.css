@@ -303,6 +303,10 @@ footer{
   margin: 1em;
 }
 
+.redes img:hover{
+  scale: 1.1;
+}
+
 .info{
   display:flex;
   align-items: flex-end;
@@ -322,6 +326,9 @@ footer{
   color: #ffffff;
   font-size: 1.5rem;
   font-weight: bold;
+}
+.direccion a:hover{
+  color: #c0f1fa;
 }
 
 @media screen and ( max-width: 768px){
