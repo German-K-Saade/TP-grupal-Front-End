@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
-/* Globales*/
+
 *{
     margin: 0px;
     padding: 0px;
@@ -267,7 +267,7 @@ footer{
 /*---------------------------------------------------------------------------
                         PAGINA PROMOCIONES
 ----------------------------------------------------------------------------*/
-/* Estilos generales */
+
 body {
   font-family: Arial, sans-serif;
   font-size: 20px;
@@ -275,7 +275,6 @@ body {
   color: black;
 }
 
-/* Contenedor principal */
 .Container {
   background-image: url("../img/Fondo.jpeg");
   width: 100%;
@@ -286,17 +285,6 @@ body {
   justify-content: space-around;
 }
 
-/* Contenedor de las cartas */
-/*.card-container {
-  width: 190px;
-  height: 100;
-  position: relative;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.438);
-  overflow: hidden;
-  border-radius: 10px;
-}
-
-/* Secciones (tarjetas) */
 .Container section {
   cursor: default;
   width: 40em;
@@ -341,7 +329,7 @@ body {
 
 .Container section p {
   color: #040fac;
-  font-size: 1.2rem; /
+  font-size: 1.2rem; 
   font-weight: bold;
   margin-top: 40px;
 }
@@ -353,7 +341,7 @@ body {
   
 }
 
-/* Estilos para pantallas pequeñas (máximo 768px de ancho) */
+
 @media screen and (max-width: 768px) {
 
   .Container{

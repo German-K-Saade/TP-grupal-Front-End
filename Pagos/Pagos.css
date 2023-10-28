@@ -2,7 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
-/* Globales*/
 *{
     margin: 0px;
     padding: 0px;
@@ -269,14 +268,14 @@ footer{
 /*---------------------------------------------------------------------------
                         PAGINA PAGOS
 ----------------------------------------------------------------------------*/
-/* Estilos generales */
+
 body {
   font-family: Arial, sans-serif;
   font-size: 20px;
   line-height: 1.5;
   color: black;
 }
-/* Contenedor "pagos" */
+
 .pagos {
   width: 300px;
   max-width: 100%;
@@ -287,12 +286,12 @@ body {
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 }
 
-/* Espaciado entre las columnas */
+
 .Container section + section {
   margin-left: 2%;
 }
 
-/* Estilos para pantallas pequeñas (máximo 768px de ancho) */
+
 @media (max-width: 768px) {
   .Container {
       width: 100%;
@@ -304,7 +303,7 @@ body {
   }
 }
 
-/* Formulario de pagos */
+
 *,
 *::before,
 *::after {
@@ -319,10 +318,6 @@ body {
   background-image: url("../img/Fondo.jpeg");
 }
 
-
-/*--------------------
-Buttons
---------------------*/
 .btn {
   display: block;
   background: hsl(86, 76%, 71%);
@@ -353,9 +348,6 @@ Buttons
 
 }
 
-/*--------------------
-Form
---------------------*/
 .form {
 
   fieldset {
@@ -470,9 +462,6 @@ Form
 
 }
 
-/*--------------------
-Checkout
---------------------*/
 .checkout {
   margin: 150px auto 30px;
   position: relative;
@@ -483,9 +472,6 @@ Checkout
   box-shadow: 0 10px 40px hsla(0, 0, 0, .1);
 }
 
-/*--------------------
-Credit Card
---------------------*/
 .credit-card-box {
   perspective: 1000;
   width: 400px;
