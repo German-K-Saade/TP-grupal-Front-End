@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
-/* Globales*/
+
 *{
     margin: 0px;
     padding: 0px;
@@ -294,7 +294,7 @@ body {
 
 
 .contenedor {
-    background: #22313f96;
+    background: #22313fd2;
     max-width: 600px;
     margin: 5% auto;
     padding: 20px;
@@ -324,7 +324,6 @@ textarea {
     transition: border-color 0.3s;
 }
 
-/* Establece un estilo cuando los campos de entrada tienen foco */
 input[type="text"]:focus,
 input[type="email"]:focus,
 select:focus,
@@ -333,7 +332,7 @@ textarea:focus {
 }
 
 input[type="submit"] {
-    background-color: #4c00ff;
+    background-color: #038da8;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -343,25 +342,25 @@ input[type="submit"] {
 }
 
 
-/* Cambia el color del botón cuando se pasa el mouse sobre él */
+
 input[type="submit"]:hover {
-    background-color: #3800d0;
+    background-color:#006578;
 }
 #msjnombre,
 #msjemail,
 #msjtel,
 #msj{
-  color: red;
+  color: rgb(238, 12, 12);
 }
 
-/* Estilos para pantallas pequeñas  */
+
 @media screen and (max-width: 768px) {
     .contenedor, .mapa {
-        margin: 5% 10px; /* Reducimos el margen izquierdo y derecho */
+        margin: 5% 10px; 
     }
     
     input[type="submit"] {
-        width: 100%; /* Aseguramos que el botón ocupe todo el ancho */
+        width: 100%; 
     }
 }
 
